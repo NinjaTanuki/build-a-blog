@@ -7,11 +7,7 @@
     {% else %}
 
         {% for post in post %}
-<<<<<<< HEAD
-        <h2><a name="post.id" href="/blog?id={{post.id}}">{{post.title}}</a></h2>
-=======
-        <h2><a name="{{post.id}}" href="/blog?id={{post.id}}">{{post.title}}</a></h2>
->>>>>>> 9eb1baa3c99771ed0c04fc5fc088dcb43ebb399f
+        <h2><a href="/blog?id={{post.id}}">{{post.title}}</a></h2>
         <p>{{post.body}}</p>
         {% endfor %}
 
