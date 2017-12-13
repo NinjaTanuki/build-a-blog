@@ -21,9 +21,14 @@ class Post(db.Model):
 @app.route('/blog', methods=['POST','GET'])
 def individual_post():
 
+<<<<<<< HEAD
     post_id = request.args.get('post_id')
     indv_post = Post.query.filter_by(id=post_id).first()
     return render_template('blog.html', indv_post=indv_post)
+=======
+    blog_id = request.args.get('post.id')
+    return render_template('blog.html')
+>>>>>>> 9eb1baa3c99771ed0c04fc5fc088dcb43ebb399f
 
 
 
